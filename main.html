@@ -4,10 +4,34 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        #game-container {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	Number of roud , you want to play : <input type="number" id="gameInput"> <button id="playBtn">Play</button> <br>
+    <br>
+
+    <div id="game-container">
+        
+        <button id="rockBtn" value="rock">Rock</button>
+        <button id="paperBtn" value="paper">Paper</button>
+        <button id="scissorBtn" value="scissor">Scissor</button>
+
+        <br> <br>
+
+        Computer's choice : <span id="compChoiceElement">0</span> <br>
+        User's choice : <span id="userChoiceElement">0</span> <br>
+        Result of this round : <span id="roundResElement">0</span> <br> <br>
+
+        User's point : <span id="userPointElement">0</span> <br>
+        Computer's point : <span id="compPointElement">0</span> <br>
+        Turns left : <span id="remainingRoundElement">0</span> <br> <br>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
